@@ -1,4 +1,4 @@
-module ec-lms
+module bbb-service
 
 go 1.20
 
