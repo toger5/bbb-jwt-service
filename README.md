@@ -6,7 +6,7 @@ a BigBlueButton Room.
 
 ## Usage
 
-To start the service locally:
+To start the service:
 
 ```
 $ BBB_URL="https://some-bbb-domain/" BBB_SECRET=the-bbb-secret go run *.go
