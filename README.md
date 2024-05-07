@@ -9,5 +9,5 @@ a BigBlueButton Room.
 To start the service:
 
 ```
-$ BBB_URL="https://some-bbb-domain/" BBB_SECRET=the-bbb-secret go run *.go
+$ BBB_HOST="https://some-bbb-domain/" BBB_SECRET=the-bbb-secret go run *.go
 ```
