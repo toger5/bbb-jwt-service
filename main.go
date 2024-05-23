@@ -182,7 +182,7 @@ func main() {
 		log.Fatal("BBB_SECRET and BBB_URL environment variables must be set")
 	}
 
-	log.Printf("BBB_SECRET %s and BBB_HOST %s", bbbSecret, bbbHost)
+	log.Printf("BBB_HOST %s", bbbHost)
 
 	handler := &Handler{
 		secret:  bbbSecret,
