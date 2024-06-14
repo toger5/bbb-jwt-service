@@ -8,13 +8,13 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o lk-jwt-service
+RUN go build -o bbb-service
 
 FROM scratch
 
-COPY --from=builder /proj/lk-jwt-service /lk-jwt-service
+COPY --from=builder /proj/bbb-service /bbb-service
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
 EXPOSE 8080
 
-CMD [ "/lk-jwt-service" ]
+CMD [ "/bbb-service" ]
